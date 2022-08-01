@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<title>E-Scrap Market</title>
+
+    <!-------------------- ICON ------------------------>
+    <link rel="icon" href="assets/img/scrap.png">
+
+    <!--------------- STYLES --------------------------->
+    <link rel="stylesheet" href="style.css">
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+
+        <!-- google-icons -->
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css" integrity="sha256-mmgLkCYLUQbXn0B1SRqzHar6dCnv9oZFPEC1g1cwlkk=" crossorigin="anonymous" />
+    
+</head>
+
+<body>
+
+<!------------------------------------  HEADER SECTION  ---------------------------------->
+  <header class="p-3 mb-3">
+    <div class="container">
+      <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+      	<a href="index.html" class="d-flex align-items-center mb-2 mb-lg-0 text-dark text-decoration-none">
+          <img src="assets/img/scrap.png" class="bi me-2" width="40" height="32"></img>
+        </a>
+
+        <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
+          <li><a href="#overview" class="nav-link px-3 link-secondary">Overview</a></li>
+          <li><a href="#rate" class="nav-link px-3 link-secondary">Rate Card</a></li>
+          <li><a onclick="togglePopup()" class="nav-link px-3 link-secondary" style="cursor: pointer;">Contact</a></li>
+        </ul>
+
+        <form class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3">
+          <input type="search" class="form-control" placeholder="Search..." aria-label="Search">
+        </form>
+
+        <div class="dropdown text-end">
+          <a href="#" class="d-block link-dark text-decoration-none dropdown-toggle" id="dropdownUser1" data-bs-toggle="dropdown" aria-expanded="false">
+            <img src="https://github.com/mdo.png" alt="mdo" width="32" height="32" class="rounded-circle">
+          </a>
+          <ul class="dropdown-menu text-small" aria-labelledby="dropdownUser1">
+            <li><a class="dropdown-item" href="#">New project...</a></li>
+            <li><a class="dropdown-item" href="#">Settings</a></li>
+            <li><a class="dropdown-item" href="#">Profile</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="#">Sign out</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </header>
+<!------------------------------------  HEADER SECTION ENDS  ---------------------------------->
+
+<!------------------------------------  CONTACT SECTION  ---------------------------------->
+        <div class="popup" id="popup1">
+            <div class="overlay">
+            <div class="content">
+                <div class="close-btn" onclick="togglePopup()">×</div>
+                <h1>Contact Us</h1>
+                <p>If you reached here, I hope you navigated through our idea and loved it.</p>
+                <h2>Reach Us Here:</h2>
+                <p class="emailtxt">escrap@gmail.com</p>
+            </div>
+            </div>
+        </div>
+<!------------------------------------  CONTACT SECTION ENDS  ---------------------------------->        
+
+<!------------------------------------  MAIN BODY  ---------------------------------->
+	<div class="text-center"><img src="assets/img/scbg.jpg" style="max-height: 400px;" class="rounded img-fluid"></div>
+	<br><br>
+	<section id="overview">
+		<div class="text-center"><h1>Overview</h1></div>
+			<p class="mainbo">For instance, During "Covid Times", People had to stay at their homes for majority of months. During that time the items that were supposed to be working gave up and were totally useless for them. While these things had to pile up, people were afraid that these items while neither sell nor be used. Inspired by famous TV show "PAWN STARS", We are starting an online rag picking service where we buy these items from the people and process them further to later create biodegradable items that can be used by the people for the longest while we also provide employement opportunities to the people working with us and an income source to people who are selling their items.
+			<br>
+			<br>
+	<p class="mainbo">Our work has taken the following measures to manage these scraps here:
+<ul><li>We have a special storage house in one of its wards to collect scraps for processing.</li>
+<li>We hire rag pickers to separate these scraps.</li>
+<li>We use different vehicles to handle different types of scraps. They are covered so as to avoid spillage.</li>
+<li>The authority also offers other ways to dispose of non-degradable scraps using scientific methods.</li></ul>
+</p>
+
+	</section>
+
+<!------------------------------------  MAIN BODY ENDS  ---------------------------------->
+
+<!------------------------------------  FOOTER SECTION  ---------------------------------->
+    <footer class="footer-area">
+        
+        <div class="main-footer-area section-padding-100-0">
+            <div class="container">
+                <div class="row">
+                    
+                    <div class="col-5 col-sm-6 col-lg-3" style="margin-right: 140px;">
+                        <div class="single-footer-widget">
+                            <div class="widget-title">
+                                <h4>About</h4>
+                            </div>
+                            <div class="widget-content">
+                                <p>E-Scrap market provides door step scrap service where you can sell your scrap to us and earn some <b>Sweet Cash</b> with us.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    
+                    <div class="col-11 col-sm-5 col-lg-3" style="margin-right: 50px;">
+                        <div class="single-footer-widget mb-70 wow fadeInUp" data-wow-delay="100ms">
+                            <div class="widget-title">
+                                <h4>Quick Links</h4>
+                            </div>
+                            <div class="widget-content">
+                                <nav>
+                                    <ul>
+                                        <li><a href="#overview">Overview</a></li>
+                                        <li><a href="#rate">Rate Card</a></li>
+                                        <li><a onclick="togglePopup()">Contact us</a></li>
+                                    </ul>
+                                </nav>
+                            </div>
+                        </div>
+                    </div>
+                     <div class="col-13 col-sm-7 col-lg-4" >
+                        <div class="single-footer-widget mb-70 wow fadeInUp" data-wow-delay="100ms" style="visibility: visible;animation-delay: 100ms;animation-name: fadeInUp;bottom: 16px;">
+                            <div class="widget-content" style="margin-top: 30px; margin-bottom: 15px;">
+                                <h4>Reach us at:</h4><p>JIMS, 3 Near Rithala Metro Station Rohini Sector 5, Institutional Area, New Delhi, Delhi 110085</p><br><h4>Mail us at:</h4><p>escrap@gmail.com</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>   
+	</footer>
+
+<!------------------------------------  FOOTER SECTION ENDS  ---------------------------------->
+
+<!--------------------------------------- JAVASCRIPT START -------------------------------------------->
+	<script src="assets/js/bootstrap.bundle.min.js"></script>
+	<script src="assets/js/script.js"></script>
+<!--------------------------------------- JAVASCRIPT ENDS -------------------------------------------->
+
+
+</body>
+</html>
